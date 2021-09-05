@@ -1,5 +1,7 @@
 var express = require('express')
 
+var http = require('http')
+
 var todoController = require('./controllers/to-do-controller')
 
 var app = express()
@@ -7,7 +9,7 @@ var app = express()
 //set up template engine
 app.set('view engine', 'ejs')
 
-//fire controllers
+//fire controllers - now app is available in to-do-controller.js
 todoController(app)
 
 //inbuilt express middleware (EXPRESS STATIC)
