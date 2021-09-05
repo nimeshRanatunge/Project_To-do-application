@@ -7,6 +7,9 @@ var app = express()
 //set up template engine
 app.set('view engine', 'ejs')
 
+//fire controllers
+todoController(app)
+
 //inbuilt express middleware (EXPRESS STATIC)
 app.use('assets', express.static('./public')) //when go to assets route it maps to static file  
 
