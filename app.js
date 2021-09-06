@@ -13,7 +13,7 @@ app.set('view engine', 'ejs')
 todoController(app)
 
 //inbuilt express middleware (EXPRESS STATIC)
-app.use('assets', express.static('./public')) //when go to assets route it maps to static file  
+app.use('/assetsz', express.static('assets')) //when go to assets route it maps to static file  
 
 //listen to a port
 app.listen(3000)
