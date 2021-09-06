@@ -22,5 +22,6 @@ module.exports = (app)=>{
             return todo.item.replace(/ /g, " ") !== req.params.item
         })
         res.json(data)
+        //res.render('todo', {todos: data})
     })
 }
