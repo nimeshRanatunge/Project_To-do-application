@@ -13,7 +13,7 @@ module.exports = (app)=>{
         //grab data in req body and push that data to data array
         data.push(req.body)
         //send this data to frontend
-        res.json(data)
+        res.render('todo', {todos: data})
     })
 
     app.delete('/todo', (req, res)=>{
