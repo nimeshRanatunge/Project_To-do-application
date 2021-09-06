@@ -6,7 +6,7 @@ $(document).ready(function(){
       var todo = {item: item.val()};
 
       $.ajax({
-        type: 'POST',
+        type: 'POST', // now go to xyzzz handler
         url: '/todo',
         data: todo,
         success: function(data){
